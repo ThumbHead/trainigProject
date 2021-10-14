@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD ORDERING WEBSITE</title>
+
+    <!---Background images--->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!---font-awesome link--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---css stylesheet link--->
+    <link rel="stylesheet" href="JavaScript Project/style.css">
+    
+    <!---bootstrap link--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    
+
+</head>
+<body>
+
+    <!---Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">FOODDY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+      <!---Background Images--->
+      <section class="bg-img">
+      <div class="container-fluid bg-image">
+        <div class="head">
+          <div><p><u>WELCOME TO FOODDY</u></p></div>
+            <div><h3>Order Your Favour Food<br></h3></div>
+              <div class="btn">
+                  <a href="#Menu" class="btn">Menu</a>
+              </div>
+        </div>
+      </div>
+    </section>
+      <!---Menu Section Start--->
+      <section class="Menu" id="Menu">
+        <h2 class="food-menu-heading">FOOD MENU</h2>
+        <div class="food-menu-container container">
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-engin-akyurt-3219547.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 1</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox1','itemval1')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox1">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox1','itemval1')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval1">250</p>
+              <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-rajesh-tp-1600711.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 2</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox2','itemval2')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox2">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox2','itemval2')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval2">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-edward-eyer-1049620.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 3</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox3','itemval3')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox3">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox3','itemval3')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval3">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-engin-akyurt-2347311.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 4</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox4','itemval4')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox4">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox4','itemval4')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval4">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="Images/pexels-diego-pontes-2323398.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 5</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox5','itemval5')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox5">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox5','itemval5')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval5">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-dana-tentis-1213710.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 6</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox6','itemval6')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox6">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox6','itemval6')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval6">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-lisa-109275.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 7</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox7','itemval7')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" name="" class="page-link" value="1" id="textbox7">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox7','itemval7')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval7">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+
+          <div class="food-menu-item">
+            <div class="food-image">
+              <img src="images/pexels-anthony-shkraba-4753640.jpg" alt="">
+            </div>
+            <div class="food-name">
+              <h2 class="food-title">Food Item 8</h2>
+              <p class="food-price">Price: &#8377; 250</p>
+              <div class="container">
+                <ul class="pagination justify-content-end set_quantity ">
+                   <li class="page-item">
+                     <button class="page-link" onclick="decreaseQuantity('textbox8','itemval8')"><i class="fas fa-minus"></i></button>
+                   </li>
+                   <li class="page-item">
+                    <input type="text" maxlength="2" name="" class="page-link" value="1" id="textbox8">
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseQuantity('textbox8','itemval8')"><i class="fas fa-plus"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <p class="amount">Amount: &#8377;<span id="itemval8">250</p>
+                <a href="#Order" class="btn">Order</a>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <!---Order Page--->
+        <section class="Order" id="Order">
+          <h3 class="sub-heading">Order Now</h3>
+          <h1 class="heading">Free & Fast</h1>
+          <form>
+          <div class="container">
+            <div class="billbox" id="invoice">
+                <h3 class="product-amt">The Total Amount: </h3>
+                <div class="price-indiv">
+                    <p>Product Amount</p>
+                    <p>&#8377;<span id="product_total_amt">0.00</span></p>
+                </div>
+                <div class="price-indiv">
+                    <p>Tip</p>
+                    <p>&#8377;<span id="tip_amt">50</span></p>
+                </div>
+                <hr>
+                <div class="total-amt">
+                    <p>Total Amount: </p>
+                    <p>&#8377;<span id="total_cart_amt">0.00</span></p>
+                </div>
+                <button class="btn btn-primary text-uppercase" id="print">Print Bill</button>
+            </div>
+        </div>
+        </form>
+        </section>
+
+      </section>
+
+      
+    
+
+       
+              
+       
+      
+      
+  
+    
+
+
+
+
+
+
+
+
+
+
+    <!---custom js-file link--->
+    <script type="text/javascript">
+    var product_total_amt = document.getElementById('product_total_amt');
+    var total_cart_amt = document.getElementById('total_cart_amt');
+    var tip_amt = document.getElementById('tip_amt');
+    const decreaseQuantity = (incdec,itemprice) => {
+      var itemval = document.getElementById(incdec);
+      var itemprice = document.getElementById(itemprice);
+      //console.log(itemval.value);
+      if(itemval.value <= 1)
+      {
+        itemval.value = 1;
+      }
+      else
+      {
+        itemval.value = parseInt(itemval.value)-1;
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) - 250;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 250;
+        total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(tip_amt.innerHTML);
+      }
+    }
+
+    const increaseQuantity = (incdec,itemprice) => {
+      var itemval = document.getElementById(incdec);
+      var itemprice = document.getElementById(itemprice);
+      
+      //console.log(itemval.value);
+      if(itemval.value > 9)
+      {
+        itemval.value = 10;
+        alert('Max 10 Allowed')
+      }
+      else
+      {
+        itemval.value = parseInt(itemval.value)+1;
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) + 250;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 250;
+        total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(tip_amt.innerHTML);
+      }
+    }
+
+    //html2pdf convert
+    var print = document.getElementById("print")
+
+    html2pdf(print)
+    
+
+    
+      </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>

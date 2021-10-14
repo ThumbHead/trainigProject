@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-bottom: 40%;
+        }
+
+         .container .product-amt{
+             display: flex;
+        }
+
+         .container .price-indiv{
+             display: flex;
+             justify-content: space-between;
+         }
+
+         .container .total-amt{
+             display: flex;
+             justify-content: space-between;
+         }
+
+         .container .billbox{
+             margin-bottom: 10%;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="billbox">
+            <h2 class="product-amt">The Total Amount Of</h2>
+            <div class="price-indiv">
+                <p>Product Amount</p>
+                <p>&#8377;<span id="product_total_amt">0.00</span></p>
+            </div>
+            <div class="price-indiv">
+                <p>Tip</p>
+                <p>&#8377;<span id="tip_amt">50</span></p>
+            </div>
+            <hr>
+            <div class="total-amt">
+                <p>Total Amount: </p>
+                <p>&#8377;<span id="total-cart-amt">0.00</span></p>
+            </div>
+            <button class="btn btn-primary text-uppercase">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
